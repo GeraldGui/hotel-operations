@@ -9,5 +9,9 @@ public class Main {
         } else {
             System.out.println("Room 1 is not available.");
         }
+
+        Reservation reservation = new Reservation("King", 200.00, 2, true);
+
+        System.out.println(reservation.getReservationTotal());
     }
 }
