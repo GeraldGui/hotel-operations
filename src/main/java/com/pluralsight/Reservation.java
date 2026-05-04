@@ -59,4 +59,13 @@ public class Reservation {
         return 0;
     }
 
+    @Override
+    public String toString() {
+        return "Reservation{" +
+                "roomType='" + roomType + '\'' +
+                ", price=" + price +
+                ", numberOfNights=" + numberOfNights +
+                ", weekend=" + weekend +
+                '}';
+    }
 }
