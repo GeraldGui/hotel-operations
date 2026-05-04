@@ -33,12 +33,21 @@ public class Reservation {
         return weekend;
     }
 
-    public void setIsWeekend(boolean isWeekend) {
-
+    public boolean isSetWeekend(boolean isWeekend) {
+        return weekend;
     }
 
     public double getReservationTotal() {
-        return 0;
+        if (getRoomType().equalsIgnoreCase("king") && isWeekend()) {
+            return price = 152.90;
+        } else if (getRoomType().equalsIgnoreCase("double") && isWeekend()) {
+            return price = 136.40;
+        } else if (getRoomType().equalsIgnoreCase("king")) {
+            return price = 139.00;
+        } else if (getRoomType().equalsIgnoreCase("double")) {
+            return price = 124.00;
+        }
+        return price;
     }
 
 }
